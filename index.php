@@ -29,13 +29,16 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//Alterar um usuário
+//$usuario = new Usuario();
+//$usuario->loadbyId(2);
+//$usuario->update("Goku", "DFSHHRTHww#$");
+//echo $usuario;
 
+//DELETANDO UM USUÁRIO NO BANCO
 $usuario = new Usuario();
-
-$usuario->loadbyId(2);
-
-$usuario->update("Goku", "DFSHHRTHww#$");
-
+$usuario->loadbyId(3);
+$usuario->delete();
 echo $usuario;
 
 ?>
