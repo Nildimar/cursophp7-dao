@@ -20,10 +20,22 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Carrega usuário usando login e senha
+//$usuario = new Usuario();
+//$usuario->login("nil", "123456");
+//echo $usuario;
+
+//Insert de um usuário novo banco usando DAO
+//$aluno = new Usuario("nildimar", "testeskl");
+//$aluno->insert();
+//echo $aluno;
+
 
 $usuario = new Usuario();
-$usuario->login("nil", "123456");
+
+$usuario->loadbyId(2);
+
+$usuario->update("Goku", "DFSHHRTHww#$");
 
 echo $usuario;
 
- ?>
+?>
